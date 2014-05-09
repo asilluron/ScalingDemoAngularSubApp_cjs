@@ -9,8 +9,6 @@ describe("Controller: BlogAggregatorCtrl", function () {
 	beforeEach(function () {
 		angular.module('viewAPI.controllers');
 
-		console.log(BlogAggregatorCtrl);
-
 		inject(function ($controller, $rootScope) {
 			scope = $rootScope.$new();
 
