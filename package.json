@@ -1,0 +1,21 @@
+{
+  "name": "angularsubappcjs",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "browserify": "~3.46.0",
+    "vinyl-source-stream": "~0.1.1",
+    "karma": "~0.12.14",
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "angular": "~1.2.16",
+    "karma-browserify": "~0.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "karma start"
+  }
+}
