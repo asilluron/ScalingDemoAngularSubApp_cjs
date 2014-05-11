@@ -1,6 +1,7 @@
-var angular = require("angular"),
-	inject = angular.injector(['ng']).invoke,
-	controllers = require("../../../src/viewAPI/controllers"),
+require("angular/angular");
+require("angular-mocks/angular-mocks");
+
+var controllers = require("../../../src/viewAPI/controllers"),
 	BlogAggregatorCtrl = require('../../../src/viewAPI/controllers/BlogAggregatorCtrl');
 
 describe("Controller: BlogAggregatorCtrl", function () {

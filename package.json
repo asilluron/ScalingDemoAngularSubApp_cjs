@@ -9,14 +9,18 @@
     "karma": "~0.12.14",
     "karma-jasmine": "~0.1.5",
     "karma-phantomjs-launcher": "~0.1.4",
-    "angular": "~1.2.16",
     "karma-browserify": "~0.2.0"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-mocks": "angular/bower-angular-mocks"
   },
   "main": "exports/viewAPI.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "install": "napa"
   }
 }
