@@ -1,4 +1,4 @@
 var BlogAggregatorCtrl = require('./controllers/BlogAggregatorCtrl');
 
-angular.module("viewAPI.controllers", [])
+angular.module("blog-content.controllers", [])
 	.controller("BlogAggregatorCtrl", BlogAggregatorCtrl);
