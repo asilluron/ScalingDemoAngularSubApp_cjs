@@ -8,9 +8,9 @@ gulp.task('default', function () {
 });
 
 gulp.task('deploy', function () {
-	return browserify('./src/viewAPI/app.js')
+	return browserify('./src/blog-content/app.js')
 		.external("angular")
 		.bundle()
-		.pipe(source('viewAPI.js'))
+		.pipe(source('blog-content.js'))
 		.pipe(gulp.dest('./exports/'));
 });
