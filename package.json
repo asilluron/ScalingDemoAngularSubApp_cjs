@@ -9,11 +9,12 @@
     "karma": "~0.12.14",
     "karma-jasmine": "~0.1.5",
     "karma-phantomjs-launcher": "~0.1.4",
-    "karma-browserify": "~0.2.0"
+    "karma-browserify": "~0.2.0",
+    "blog-resource": "git://github.com/asilluron/ScalingDemoAngularSubAppModel1_cjs"
   },
   "napa": {
-    "angular": "angular/bower-angular",
-    "angular-mocks": "angular/bower-angular-mocks"
+    "angular": "angular/bower-angular#v1.2.16",
+    "angular-mocks": "angular/bower-angular-mocks#v1.2.16"
   },
   "main": "exports/viewAPI.js",
   "engines": {

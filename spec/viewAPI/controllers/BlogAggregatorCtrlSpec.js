@@ -1,28 +1,26 @@
 require("angular/angular");
 require("angular-mocks/angular-mocks");
 
-var controllers = require("../../../src/blog-content/controllers"),
-	BlogAggregatorCtrl = require('../../../src/blog-content/controllers/BlogAggregatorCtrl');
+var controllers = require("../../../src/blog-content/controllers");
 
 describe("Controller: BlogAggregatorCtrl", function () {
 	var scope;
 
 	beforeEach(function () {
-		angular.module('blog-content.controllers');
+		angular.mock.module("blogcontent.controllers");
 
 		inject(function ($controller, $rootScope) {
 			scope = $rootScope.$new();
 
-			ctrl = $controller(BlogAggregatorCtrl, {
+			ctrl = $controller("BlogAggregatorCtrl", {
 				$scope: scope
 			});
 		});
 	});
 	describe("Basic Properties", function () {
 		it("will intiially show 0 blog entries", function () {
-			expect(scope.numBlogs).toBe(0);
+			expect(scope.test).toBe(3);
 		});
-
 	});
 
 });

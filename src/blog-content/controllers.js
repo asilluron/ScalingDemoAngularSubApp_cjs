@@ -1,4 +1,5 @@
-var BlogAggregatorCtrl = require('./controllers/BlogAggregatorCtrl');
+'use strict';
 
-angular.module("blog-content.controllers", ["blog-resources"])
-	.controller("BlogAggregatorCtrl", BlogAggregatorCtrl);
+
+module.exports = angular.module("blogcontent.controllers", [require("blog-resources/exports/blog-resources").name])
+	.controller("BlogAggregatorCtrl", require('./controllers/BlogAggregatorCtrl'));

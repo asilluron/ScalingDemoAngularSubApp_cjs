@@ -1,4 +1,3 @@
-var controllers = require("./controllers");
+'use strict';
 
-
-angular.module("blog-content", ["blog-content.controllers"]);	
+angular.module("blogcontent", [require("./controllers").name]);

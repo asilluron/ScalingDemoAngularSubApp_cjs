@@ -1,4 +1,6 @@
-function BlogAggregatorCtrl($scope, Blogs){
+'use strict';
+
+module.exports = ["$scope", "Blogs", function ($scope, Blogs){
 	$scope.Blogs = Blogs.query();
-}
-module.exports = BlogAggregatorCtrl;
+	$scope.test = 3;
+}];
