@@ -1,14 +1,14 @@
 require("angular/angular");
 require("angular-mocks/angular-mocks");
 
-var controllers = require("../../../src/viewAPI/controllers"),
-	BlogAggregatorCtrl = require('../../../src/viewAPI/controllers/BlogAggregatorCtrl');
+var controllers = require("../../../src/blog-content/controllers"),
+	BlogAggregatorCtrl = require('../../../src/blog-content/controllers/BlogAggregatorCtrl');
 
 describe("Controller: BlogAggregatorCtrl", function () {
 	var scope;
 
 	beforeEach(function () {
-		angular.module('viewAPI.controllers');
+		angular.module('blog-content.controllers');
 
 		inject(function ($controller, $rootScope) {
 			scope = $rootScope.$new();

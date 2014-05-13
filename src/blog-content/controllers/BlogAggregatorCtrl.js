@@ -1,5 +1,4 @@
-function BlogAggregatorCtrl($scope){
-	$scope.numBlogs = 0;
+function BlogAggregatorCtrl($scope, Blogs){
+	$scope.Blogs = Blogs.query();
 }
-
 module.exports = BlogAggregatorCtrl;
