@@ -6,9 +6,9 @@ angular.module("blogcontent", [_dereq_("./controllers").name]);
 'use strict';
 
 
-module.exports = angular.module("blogcontent.controllers", [_dereq_("blog-resources/exports/blog-resources").name])
+module.exports = angular.module("blogcontent.controllers", ["blog-resources"])
 	.controller("BlogAggregatorCtrl", _dereq_('./controllers/BlogAggregatorCtrl'));
-},{"./controllers/BlogAggregatorCtrl":3,"blog-resources/exports/blog-resources":"ldjYq+"}],3:[function(_dereq_,module,exports){
+},{"./controllers/BlogAggregatorCtrl":3}],3:[function(_dereq_,module,exports){
 'use strict';
 
 module.exports = ["$scope", "Blogs", function ($scope, Blogs){

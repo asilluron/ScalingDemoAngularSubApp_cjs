@@ -1,5 +1,5 @@
 'use strict';
 
 
-module.exports = angular.module("blogcontent.controllers", [require("blog-resources/exports/blog-resources").name])
+module.exports = angular.module("blogcontent.controllers", ["blog-resources"])
 	.controller("BlogAggregatorCtrl", require('./controllers/BlogAggregatorCtrl'));
